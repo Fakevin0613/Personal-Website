@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+body {
+    background-color: #000000;
+    background-image: url(/quote_generator/tile_background.png);
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    font-family: Macondo, sans-serif
+}
+
+.container {
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.3)
+}
+
+.Quote {
+    font-size: 3rem;
+}
+
+.fa-quote-left{
+    font-size: 5rem;
+}
+
+.fa-quote-right{
+    font-size: 5rem;
+}
+
+.button{
+    margin-top: 10px;
+
+}
+
+button{
+    cursor:pointer;
+    font-size:1.2rem;
+    height: 2.5rem;
+    outline:none;
+    background-color: Transparent;
+    padding:5px;
+    margin:10px
+}
+
+button:hover {
+    color: white;
+    background-color: #000000;
+}
+
+@media screen and (max-width: 1000px){
+    .container{
+        margin: auto 10px;
+    }
+    .Quote{
+        font-size: 2.5rem;
+    }
+}
+
