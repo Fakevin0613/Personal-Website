@@ -1,6 +1,6 @@
 :root{
-    --red:#dd5751;
-    --orange: #e3905f;
+    --red:#1e3d59;
+    --orange: #f5f0e1;
     --green: #82dec1;
     --white: #ffffff;
     --lime: #e2fdbd;
@@ -17,6 +17,7 @@
 
 .container {
     max-width: 1280px;
+    height: auto;
     margin:0 auto;
 
     display: flex;
