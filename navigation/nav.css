@@ -8,6 +8,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
 
+body{
+    background-image: url(../tile_background.png);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,9 +21,8 @@
 
 .container {
     max-width: 1280px;
-    height: auto;
+    height: 20px;
     margin:0 auto;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,7 +42,7 @@ nav{
     z-index:99;
     background-color: var(--red);
     padding: 16px 32px;
-    border-bottom: 3px solid var(--orange);
+    border-bottom: 3px solid black
 }
 
 .navother{
@@ -105,13 +108,39 @@ nav{
     text-decoration: none;
 } 
 
-.menu a.is-active, .menu a:hover {
+.menu a.is_active, .menu a:hover {
     background-color: var(--green);
 }
 
-.dropdown {
-    position: relative;
+.noselecttext {
+    user-select: none;
 }
+
+.dropdown-content{
+    position: fixed;
+    height: 100%;
+    width: 0px;
+    overflow-x: hidden;
+    background-color: var(--red);
+    top: 52px;
+    right: 0;
+    padding-top: 8px;
+    transition: 0.3s;
+}
+
+.dropdown-content a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--white);
+    display: block;
+    transition: 0.3s;
+}
+
+.dropdown-content a.is_active, a:hover {
+    color: var(--green);
+}
+
 
 @media (min-width: 768px){
     .navother{
@@ -119,6 +148,9 @@ nav{
     }
     .menu{
         display: flex;
+    }
+    .dropdown-content{
+        display: none;
     }
 }
 
