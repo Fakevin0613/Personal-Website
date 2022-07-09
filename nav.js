@@ -1,20 +1,16 @@
 const navbutton = document.querySelector('.navother')
-let showSidebar = false;
 
 navbutton.addEventListener('click', function(){
-    showSidebar = !showSidebar
     sideBarShow();
 })
 
 function sideBarShow(){
-    if(showSidebar){
+    if(document.getElementById("mySideBar-id").style.width != "100%"){
         navbutton.classList.toggle('is_active');
-        document.getElementById("mySideBar").style.width = "100px";
-        document.getElementById("mySideBar").style.marginLeft = "-100px";
+        document.getElementById("mySideBar-id").style.width = "100%";
     }
     else{
         navbutton.classList.toggle('is_active');
-        document.getElementById("mySideBar").style.width = "0px";
-        document.getElementById("mySideBar").style.marginLeft = "0px";
+        document.getElementById("mySideBar-id").style.width = "0%";
     }
 }
