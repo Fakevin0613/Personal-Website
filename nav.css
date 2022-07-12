@@ -16,6 +16,10 @@
     font-family: 'Macondo', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .mainBar{
     max-width: 1280px;
     height: 20px;
@@ -26,14 +30,18 @@
     flex-direction: row;
 }
 
-b {
+#KevinKe-id {
     color: var(--blue);
     font-size: 28px;
     text-emphasis: bold;
 }
 
+a{
+    user-select: none;
+}
+
 nav{
-    position: fix;
+    position: fixed;
     top:0;
     left:0;
     right:0;
@@ -97,7 +105,7 @@ nav{
 
 }
 
-.menu a{
+a{
     color: var(--blue);
     margin: 0 8px;
     transition: 0.6s;
@@ -105,18 +113,14 @@ nav{
     text-decoration: none;
 } 
 
-.menu a.is_active {
+a.is_active {
     color: var(--orange)
 }
 
-.menu a:hover{
+a:hover{
     color: var(--orange);
     transform: scale(1.05);
     transition: 0.1s
-}
-
-a, #KevinKe-id{
-    user-select: none;
 }
 
 .dropdown-content{
@@ -145,8 +149,34 @@ a, #KevinKe-id{
     border-bottom-color: #fba92c;
 }
 
+.dropdown-section {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
 
-@media (min-width: 600px){
+#kevin-main {
+    background-color:bisque;
+}
+
+#about-me {
+    background-color: #e2fdbd;
+}
+
+#experience {
+    background-color: aquamarine;
+}
+
+#project {
+    background-color: aqua;
+}
+
+#contact {
+    background-color: #fba92c;
+}
+
+
+@media (min-width: 700px){
     .navother{
         display: none;
     }
