@@ -30,18 +30,19 @@ html{
     flex-direction: row;
 }
 
-#KevinKe-id {
+.kevin-main {
     color: var(--blue);
     font-size: 28px;
     text-emphasis: bold;
+    text-decoration: none;
 }
 
-a{
+.navclick{
     user-select: none;
 }
 
 nav{
-    position: fixed;
+    position: sticky;
     top:0;
     left:0;
     right:0;
@@ -105,7 +106,7 @@ nav{
 
 }
 
-a{
+.navsmall {
     color: var(--blue);
     margin: 0 8px;
     transition: 0.6s;
@@ -113,11 +114,11 @@ a{
     text-decoration: none;
 } 
 
-a.is_active {
+.navclick.is_active{
     color: var(--orange)
 }
 
-a:hover{
+.navclick:hover{
     color: var(--orange);
     transform: scale(1.05);
     transition: 0.1s
@@ -135,7 +136,7 @@ a:hover{
     transition: 0.3s;
 }
 
-.dropdown-content a {
+.dropdown-content .navclick {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
@@ -144,7 +145,7 @@ a:hover{
     transition: 0.3s;
 }
 
-.dropdown-content a.is_active, a:hover {
+.dropdown-content .navclick.is_active, .navclick:hover {
     color: var(--orange);
     border-bottom-color: #fba92c;
 }
