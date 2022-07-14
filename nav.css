@@ -42,7 +42,7 @@ html{
 }
 
 nav{
-    position: sticky;
+    position: fixed;
     top:0;
     left:0;
     right:0;
@@ -154,10 +154,11 @@ nav{
     margin: 0;
     height: 100vh;
     width: 100vw;
+    position: relative;
 }
 
 #kevin-main {
-    background-color:bisque;
+    background-color:#fba92c;
 }
 
 #about-me {
@@ -173,11 +174,41 @@ nav{
 }
 
 #contact {
-    background-color: #fba92c;
+    background-color: bisque;
+}
+
+#contact-me-id{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    font-weight: bold;
+    padding: 80px;
+    padding-top: 125px;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+    gap: 15px;
+}
+
+#contact-me-title-id{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 26px;
+}
+
+#contact-ways-id{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#contact-form-id{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 
-@media (min-width: 700px){
+
+@media (min-width: 800px){
     .navother{
         display: none;
     }
@@ -186,6 +217,15 @@ nav{
     }
     #mySideBar-id{
         display: none;
+    }
+}
+
+@media (max-width: 800px){
+    #contact-me-id{
+        grid-template-columns: 1fr;
+    }
+    #contact-form-id{
+        display: none;;
     }
 }
 

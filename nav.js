@@ -22,7 +22,7 @@ const sectionbuttons = document.querySelectorAll(".navclick")
 const sections = document.querySelectorAll("section")
 
 window.addEventListener('scroll', () => {
-    let current = '';
+    let current = 'kevin-main';
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
